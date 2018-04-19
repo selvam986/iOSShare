@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let semaphore: SemaphoreClass = SemaphoreClass()
+        semaphore.start()
     }
 
     override func didReceiveMemoryWarning() {
