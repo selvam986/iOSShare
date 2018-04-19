@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ECA2FD382088E3D4002BF9CF /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA2FD362088E3D4002BF9CF /* Swinject.framework */; };
+		ECA2FD392088E3D4002BF9CF /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA2FD372088E3D4002BF9CF /* SwinjectStoryboard.framework */; };
+		ECA2FD3F2088E65D002BF9CF /* UserLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2FD3D2088E65D002BF9CF /* UserLocationService.swift */; };
+		ECA2FD402088E65D002BF9CF /* SemaphoreClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2FD3E2088E65D002BF9CF /* SemaphoreClass.swift */; };
 		ECCB0415208798E6001B55A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCB0414208798E6001B55A3 /* AppDelegate.swift */; };
 		ECCB0417208798E6001B55A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCB0416208798E6001B55A3 /* ViewController.swift */; };
 		ECCB041A208798E6001B55A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCB0418208798E6001B55A3 /* Main.storyboard */; };
 		ECCB041C208798E6001B55A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCB041B208798E6001B55A3 /* Assets.xcassets */; };
 		ECCB041F208798E6001B55A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCB041D208798E6001B55A3 /* LaunchScreen.storyboard */; };
-		ECCB04382087E658001B55A3 /* SemaphoreClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCB04372087E658001B55A3 /* SemaphoreClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ECA2FD362088E3D4002BF9CF /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = ../Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		ECA2FD372088E3D4002BF9CF /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = ../Carthage/Build/iOS/SwinjectStoryboard.framework; sourceTree = "<group>"; };
+		ECA2FD3D2088E65D002BF9CF /* UserLocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserLocationService.swift; path = Utility/UserLocationService.swift; sourceTree = "<group>"; };
+		ECA2FD3E2088E65D002BF9CF /* SemaphoreClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SemaphoreClass.swift; path = Utility/SemaphoreClass.swift; sourceTree = "<group>"; };
 		ECCB0411208798E6001B55A3 /* iOSShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCB0414208798E6001B55A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECCB0416208798E6001B55A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +30,6 @@
 		ECCB041B208798E6001B55A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECCB041E208798E6001B55A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECCB0420208798E6001B55A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECCB04372087E658001B55A3 /* SemaphoreClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemaphoreClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA2FD382088E3D4002BF9CF /* Swinject.framework in Frameworks */,
+				ECA2FD392088E3D4002BF9CF /* SwinjectStoryboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ECA2FD352088E3D3002BF9CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2FD362088E3D4002BF9CF /* Swinject.framework */,
+				ECA2FD372088E3D4002BF9CF /* SwinjectStoryboard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECA2FD3C2088E641002BF9CF /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2FD3E2088E65D002BF9CF /* SemaphoreClass.swift */,
+				ECA2FD3D2088E65D002BF9CF /* UserLocationService.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 		ECCB0408208798E6001B55A3 = {
 			isa = PBXGroup;
 			children = (
 				ECCB0413208798E6001B55A3 /* iOSShare */,
 				ECCB0412208798E6001B55A3 /* Products */,
+				ECA2FD352088E3D3002BF9CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +83,7 @@
 		ECCB0413208798E6001B55A3 /* iOSShare */ = {
 			isa = PBXGroup;
 			children = (
-				ECCB04392087E65E001B55A3 /* Utility */,
+				ECA2FD3C2088E641002BF9CF /* Utility */,
 				ECCB0414208798E6001B55A3 /* AppDelegate.swift */,
 				ECCB0416208798E6001B55A3 /* ViewController.swift */,
 				ECCB0418208798E6001B55A3 /* Main.storyboard */,
@@ -65,15 +92,6 @@
 				ECCB0420208798E6001B55A3 /* Info.plist */,
 			);
 			path = iOSShare;
-			sourceTree = "<group>";
-		};
-		ECCB04392087E65E001B55A3 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				ECCB04372087E658001B55A3 /* SemaphoreClass.swift */,
-			);
-			name = Utility;
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA2FD3F2088E65D002BF9CF /* UserLocationService.swift in Sources */,
+				ECA2FD402088E65D002BF9CF /* SemaphoreClass.swift in Sources */,
 				ECCB0417208798E6001B55A3 /* ViewController.swift in Sources */,
-				ECCB04382087E658001B55A3 /* SemaphoreClass.swift in Sources */,
 				ECCB0415208798E6001B55A3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
